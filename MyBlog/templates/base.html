@@ -1,0 +1,52 @@
+
+
+{# Load CSS and JavaScript #}
+
+
+{# Display django.contrib.messages as Bootstrap alerts #}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>个人博客</title>
+    <meta name="keywords" content="blog" />
+    <meta name="description" content="blog" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/css/base.css" rel="stylesheet">
+    <link href="static/css/m.css'" rel="stylesheet">
+    <link rel="icon" href="static/images/icon.png">
+    <script src="static/js/jquery-1.8.3.min.js}" ></script>
+    <script src="static/js/comm.js}"></script>
+    <!--[if lt IE 9]>
+    <script src="/static/js/modernizr.js"></script>
+    <![endif]-->
+    {% block title %}
+       <meta name="description" content=""/>
+       <title>个人博客</title>
+       {# 页面的头部信息，可添加头部标签，css,js,<title> #}
+    {% endblock %}
+  </head>
+  <body ontouchstart class="container">
+    {% block container %}
+     {# 页面的内容区域 #}
+    {% endblock %}
+  <footer>
+  <div class="box">
+    <div class="wxbox">
+      <ul>
+        <li><img src="/static/images/wxgzh.jpg"><span>微信公众号</span></li>
+        <li><img src="static/images/qq.png"><span>我的QQ</span></li>
+      </ul>
+    </div>
+    <div class="endnav">
+      <p><b>站点声明：</b></p>
+      <p>1、本站仅为橙猫个人博客</p>
+      <p>2、本站所有文章及资源均为个人用途，禁止用于商业</p>
+    </div>
+  </div>
+  <a href="#">
+  <div class="top"></div>
+  </a> </footer>
+  </body>
+</html>
